@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My findings</h1>
+
+    <div class="intro">
+        <h2>Intro</h2>
+        <p>
+            The reason I decided to do this in html is because everyone has access to html regardless of their OS, and I don't really want to buy a subscription to MS Word.
+            I have left number of commands in the main script so that you could check my work if you so wished. I have used dependency inversion,
+            though I don't think this works particularly well for dynamically typed languages like python.
+
+            To improve it could be possible to create a factory patterm which would handle things like how the data is read into a dataframe, be it from JSON,excel etc, but that is beyond the scope of this demo.
+            For the sake of keeping my sanity I had only included 3 of the 10 Most and least paid earners. I didn't want to make the html table extremely long.For more information please look through my scripts.
+        </p>
+
+
+    </div>
+
+    <div>
+        <h2>Key Findings</h2>
+        <ul>
+            <li>Top 3 earners</li>
+            <li>VP's are still on mortgage</li>
+            <li>Mean annual income for VP was 477500.0</li>
+            <li>Top 10 least paid workers</li>
+            <li>Mean average for least paid workers was 4465.5</li>
+
+
+        </ul>
+    </div>
+
+    <div>
+        <h2>Top 3 earners</h2>
+        <p>Below are the top 3 earning emp titles, consult the script in main.py</p>
+        <table>
+            <tr>
+                <th>emp_title</th>
+                <th>annual_income</th>
+                <th>home_ownership</th>
+            </tr>
+            <tr>
+                <td>VP</td>
+                <td>2300000.0</td>
+                <td>MORTGAGE</td>
+
+            </tr>
+            <tr>
+                <td>senior system engineer</td>
+                <td>1600001.0</td>
+                <td>MORTGAGE</td>
+            </tr>
+            <tr>
+                <td>managing director</td>
+                <td>1200000.0</td>
+                <td>RENT</td>
+                </tr>
+            </table>
+        
+        <div>
+            <p> 
+                VP being the most lucrative position I looked at what kind of data I could find.
+                Mean salary for a VP was 477500.0. There were 6 VPs in the data sent and all but 1 were on mortgage, the 1 who wasn't owned their home.
+            </p>
+        </div>
+
+    </div>
+
+    <div>
+        <h2>Top 3 least paid positions</h2>
+        <p>Below are the lists of 3 least paid workers </p>
+        <table>
+        <tr>
+            <th>emp_title</th>
+            <th>annual_income</th>
+            <th>home_ownership</th>
+        </tr>
+        <tr>
+            <td>nail tech</td>
+            <td>0.0 </td>
+            <td>MORTGAGE</td>
+
+        </tr>
+        <tr>
+            <td>lab tech trainer</td>
+            <td>3000.0</td>
+            <td>RENT</td>
+        </tr>
+        <tr>
+            <td>cleaner</td>
+            <td>3120.0</td>
+            <td>RENT</td>
+            </tr>
+        </table>
+        <p>
+            Nail tech getting paid 0.0 is probably a mistake but I have decided to leave this in.
+            Mean salary for the least paid workers was 4465.5. Unfortunately none of the workers in the top 10 were home owners. 
+        </p>
+    </div>
+
+</body>
+</html>
